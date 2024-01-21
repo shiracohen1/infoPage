@@ -4,6 +4,7 @@ import Background2 from './assets/background2.png'
 import Background3 from './assets/background3.png'
 import Background4 from './assets/background4.png'
 import './App.css'
+import OpeningPage from './openingPage'
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
@@ -25,7 +26,7 @@ function App() {
   
   return (
     <div style={{ backgroundImage: `url('${bgOption[currentBackground]}')`}} className='body'>
-      
+      <OpeningPage />
     </div>
   )
 }
