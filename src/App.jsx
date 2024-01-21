@@ -7,20 +7,24 @@ import './App.css'
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
-  const [currentNumber, setCurrentNumber] = useState(0);
+  const bgOption = {
+    "bg1": Background1,
+    "bg2": Background2,
+    "bg3": Background3,
+    "bg4": Background4
+  }
 
   useEffect(() => {
-   setCurrentNumber(Math.floor(Math.random() * (4 - 1) + 1));
-   choosingBackground();
+    setCurrentBackground(`bg${Math.floor(Math.random() * (4 - 1) + 1)}`);
   }, []);
 
-  function choosingBackground() {
-    setCurrentBackground(`Background${currentNumber}`);
+  useEffect(() => {
     console.log(currentBackground);
-  }
+    console.log(bgOption[currentBackground]);
+  }, [currentBackground]);
   
   return (
-    <div style={{ backgroundImage: `url(${Background1})` }} className='body'>
+    <div style={{ backgroundImage: `url('${bgOption[currentBackground]}')`}} className='body'>
       
     </div>
   )
