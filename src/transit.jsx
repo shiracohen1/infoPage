@@ -22,17 +22,19 @@ const Transit = () => {
                         <div>בימי ראשון ישנם 32 מוקדי איסוף מכל הארץ המסיעות את החיילים לקריית ההדרכה.</div>
                     </div>
                 </div>
-                <div className='outside'>
-                    <img src={OutsideBase} alt="outside" className='outsideTitle' />
-                    <div className='outsideText'>
-                        <p>מטרופולין קו - 140 מגיע לש.ג המרכזי ולמרפ״א דרום.</p>
-                        <p>אפליקציית שאטל - קישור להורדה ולהרשמה - <a href="https://onelink.to/jq7h8k">לחץ כאן</a></p>
+                <div className='inAndOutContainer'>
+                    <div className='outside'>
+                        <img src={OutsideBase} alt="outside" className='outsideTitle' />
+                        <div className='outsideText'>
+                            <p>מטרופולין קו - 140 מגיע לש.ג המרכזי ולמרפ״א דרום.</p>
+                            <p>אפליקציית שאטל - קישור להורדה ולהרשמה - <a href="https://onelink.to/jq7h8k">לחץ כאן</a></p>
+                        </div>
                     </div>
-                </div>
-                <div className='inside'>
-                    <img src={InsideButton} alt="inside" className='insideTitle' />
-                    <div className='insideText'>
-                    קו 747- קו אשר עובר ב-12 תחנות הפזורות ברחבי קריית ההדרכה ומשרת את כלל חיילי הבסיס.
+                    <div className='inside'>
+                        <img src={InsideButton} alt="inside" className='insideTitle' />
+                        <div className='insideText'>
+                        קו 747- קו אשר עובר ב-12 תחנות הפזורות ברחבי קריית ההדרכה ומשרת את כלל חיילי הבסיס.
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState, lazy } from 'react'
+import { useEffect, useState, lazy, useRef } from 'react'
 import Background1 from './assets/background1.svg' 
 import Background2 from './assets/background2.svg'
 import Background3 from './assets/background3.svg'
@@ -9,9 +9,20 @@ const OpeningPage = lazy(() => import('./openingPage'));
 const Speech = lazy(() => import('./speech'));
 const TableOfContent = lazy(() => import('./tableOfContent'));
 const Transit = lazy(() => import('./transit'));
+const FoodCourt = lazy(() => import('./foodCourt'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
+  const [currentSubject, setCurrentSubject] = useState("");
+  const buses = useRef(null);
+  const lunch = useRef(null);
+  const service = useRef(null);
+  const center = useRef(null);
+  const fitness = useRef(null);
+  const equip = useRef(null);
+  const rabanut = useRef(null);
+  const health = useRef(null);
+
   const bgOption = {
     "bg1": Background1,
     "bg2": Background2,
@@ -27,13 +38,21 @@ function App() {
     console.log(currentBackground);
     console.log(bgOption[currentBackground]);
   }, [currentBackground]);
+
+  function clickedSubject (event) {
+    // setCurrentSubject(event.currentTarget.alt);
+    // event.currentTarget.alt.current.scrollIntoView({ behavior: 'smooth' });
+
+    console.log(event.currentTarget.alt);
+}
   
   return (
     <div style={{ backgroundImage: `url(${bgOption[currentBackground]})`}} className='body'>
       <OpeningPage />
       <Speech />
-      <TableOfContent />
-      <Transit />
+      <TableOfContent clickedSubject={clickedSubject} />
+      <Transit ref={buses} />
+      <FoodCourt ref={lunch} />
     </div>
   )
 }
