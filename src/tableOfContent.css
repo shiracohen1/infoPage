@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.tableContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleTable {
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.buttonContainer {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons {
+    width: 42vw;
+    height: 9vh;
+}

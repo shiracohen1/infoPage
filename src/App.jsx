@@ -11,11 +11,6 @@ const OpeningPage = lazy(() => import('./openingPage'));
 const Speech = lazy(() => import('./speech'));
 const TableOfContent = lazy(() => import('./tableOfContent'));
 
-// const Background1 = lazy(() => import('./assets/background1.png'));
-// const Background2 = lazy(() => import('./assets/background2.png'));
-// const Background3 = lazy(() => import('./assets/background3.png'));
-// const Background4 = lazy(() => import('./assets/background4.png'));
-
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
