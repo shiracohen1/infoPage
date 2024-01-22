@@ -4,13 +4,11 @@ import Background2 from './assets/background2.svg'
 import Background3 from './assets/background3.svg'
 import Background4 from './assets/background4.svg'
 import './App.css'
-// import OpeningPage from './openingPage'
-// import Speech from './speech'
 
 const OpeningPage = lazy(() => import('./openingPage'));
 const Speech = lazy(() => import('./speech'));
 const TableOfContent = lazy(() => import('./tableOfContent'));
-
+const Transit = lazy(() => import('./transit'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
@@ -35,6 +33,7 @@ function App() {
       <OpeningPage />
       <Speech />
       <TableOfContent />
+      <Transit />
     </div>
   )
 }

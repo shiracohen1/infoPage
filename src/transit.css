@@ -1,0 +1,51 @@
+body, html {
+    height: 100vh;
+    margin: 0;
+}
+
+.shuttleContainer {
+    margin-top: 8vh;
+}
+
+.icon {
+    height: 4vh;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 40vh;
+    direction: rtl;
+}
+
+.titleName {
+    font-size: 4vh;
+    font-weight: 700;
+}
+
+.shuttleTitle, .outsideTitle, .insideTitle {
+    height: 6vh;
+    width: 22vw;
+}
+
+.shuttleText, .insideText, .outsideText {
+    width: 40vw;
+    margin-right: 5vw;
+    font-size: 1.7vh;
+    font-weight: 600;
+    direction: rtl;
+}
+
+.shuttlePic {
+    position: relative;
+    right: 26vw;
+}
