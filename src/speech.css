@@ -1,0 +1,14 @@
+body, html {
+    margin: 0;
+    height: 100vh;
+}
+
+.body {
+    height: 100%;
+}
+
+.building {
+    position: relative;
+    left: 20vw;
+    bottom: 8vh;
+}

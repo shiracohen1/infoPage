@@ -1,4 +1,4 @@
-import Title from './assets/title.svg'
+import Title from './assets/title1.svg'
 import Logo from './assets/logo.png'
 import './openingPage.css'
 

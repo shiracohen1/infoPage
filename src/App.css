@@ -10,7 +10,8 @@ body, html {
 }
 
 .body {
-  height: 100vh;
+  /* background-image: url("./assets/background1.png"); */
+  height: 1000%;
   width: 100vw;
   background-repeat: no-repeat;
   background-size: cover;
