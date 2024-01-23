@@ -28,15 +28,15 @@ const FoodCourt = () => {
                     <div>
                         <img src={OpenHours} alt="openHours" className='titleName' />
                         <div className='openText'>
-                            <p>
+                            <div>
                                 <b>ימי א׳ -ה׳-</b>
                                 <p>
                                     בוקר- 06:30-08:00
                                     צהריים- 11:30-14:00
                                     ערב- 18:00-20:00                            
                                 </p>
-                            </p>
-                            <p>
+                            </div>
+                            <div>
                                 <b>ימי שישי-</b>
                                 <p>
                                     בוקר- 06:30-08:00
@@ -44,8 +44,8 @@ const FoodCourt = () => {
                                     ערב -משתנה בהתאם
                                     לכניסת השבת.
                                 </p>
-                            </p>
-                            <p>
+                            </div>
+                            <div>
                                 <b>ימי שבת-</b>
                                 <p>
                                     בוקר- 06:30-08:00
@@ -53,7 +53,7 @@ const FoodCourt = () => {
                                     ערב- משתנה בהתאם לזמן
                                     יציאת שבת.
                                 </p>
-                            </p>
+                            </div>
                             <div>
                                 מידי שבוע מופץ ויסות חדרי אוכל
                                 קרייתי במסרתו נקבעות שעות לכל
@@ -61,6 +61,7 @@ const FoodCourt = () => {
                                 שהוקצו לבה”ד.
                             </div>
                         </div>
+                    </div>
                         <div>
                             <div>
                                 <img src={MiddleMeal} alt="middle" className='titleName' />
@@ -76,7 +77,6 @@ const FoodCourt = () => {
                                     את הפריסה.</p>
                                 </div>
                             </div>
-                    </div>
                             <div>
                                 <img src={Kashrut} alt="kasher" className='titleName' />
                                 <div className='kosherText'>

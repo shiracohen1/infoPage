@@ -39,7 +39,7 @@
 }
 
 .middleText, .kosherText {
-    width: 40vw;
+    width: 45vw;
     margin-right: 5vw;
     font-size: 1.7vh;
     font-weight: 600;
@@ -74,5 +74,5 @@
 
 p {
     padding: 0;
-    margin: 0;
+    margin: 1vw;
 }
