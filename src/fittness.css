@@ -1,0 +1,40 @@
+.heartIcon {
+    height: 4vh;
+    width: 9vw;
+    margin-right: 1vw;
+}
+
+.fitContainer {
+    margin-top: 4vh;
+}
+
+.fitTextContainer {
+    margin-right: 7vw;
+    font-size: 1.7vh;
+    font-weight: 600;
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.libraryContainer {
+    margin-right: 4vw;
+}
+
+.gymText, .poolText, .libraryText {
+    width: 40vw;
+}
+
+.poolPic {
+    height: 55vh;
+    position: relative;
+    bottom: 85vh;
+    right: 40vw;
+}
+
+.genericText1 {
+ margin-top: 7vh;
+    width: 75vw;
+    margin-right: 3vw;
+}
