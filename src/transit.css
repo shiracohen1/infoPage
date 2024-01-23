@@ -9,6 +9,7 @@ body, html {
 
 .icon {
     height: 4vh;
+    width: 9vw;
 }
 
 .titleContainer {
@@ -53,5 +54,6 @@ body, html {
 
 .shuttlePic {
     position: relative;
-    right: 26vw;
+    right: 38vw;
+    height: 30vh;
 }

@@ -11,4 +11,6 @@ body, html {
     position: relative;
     left: 20vw;
     bottom: 8vh;
+    height: 28vh;
+    width: 95vw;
 }
