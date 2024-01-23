@@ -12,6 +12,7 @@ const Transit = lazy(() => import('./transit'));
 const FoodCourt = lazy(() => import('./foodCourt'));
 const Service = lazy(() => import('./service'));
 const Rabanut = lazy(() => import('./rabanut'));
+const Center = lazy(() => import('./center'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
@@ -57,6 +58,7 @@ function App() {
       <FoodCourt />
       <Service />
       <Rabanut />
+      <Center />
     </div>
   )
 }

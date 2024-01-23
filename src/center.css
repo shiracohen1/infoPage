@@ -1,0 +1,29 @@
+.moneyIcon {
+    height: 4vh;
+    width: 9vw;
+    margin-right: 1vw;
+}
+
+.titleCenter {
+    font-size: 4vh;
+    font-weight: 700;
+    margin-left: 1vw;
+}
+
+.cenTextContainer {
+    margin-right: 5vw;
+    font-size: 1.7vh;
+    font-weight: 600;
+    direction: rtl;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bisText, .shnizText, .burgerText, .coffeeText, .gidronText, .shifturText, .bankText, .DVText , .freshText {
+    width: 25vw;
+}
+
+.bistopContainer, .shnitzelContainer, .burgerContainer, .coffeeContainer , .gidronContainer, .shiftzurimContainer, .freshContainer, .DVContainer, .bankContainer {
+    margin-right: 2vw;
+}

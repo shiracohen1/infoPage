@@ -5,6 +5,7 @@
 
 .rabanut {
     margin-top: 4vh;
+    height: 50vh;
 }
 
 .rabTitleContainer {
@@ -44,4 +45,9 @@
 .rabText {
     margin-top: 2vh;
     margin-right: 3vw;
+}
+
+.kosher {
+    height: 5vh;
+    width: 8vw;
 }
