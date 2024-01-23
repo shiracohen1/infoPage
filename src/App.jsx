@@ -10,6 +10,7 @@ const Speech = lazy(() => import('./speech'));
 const TableOfContent = lazy(() => import('./tableOfContent'));
 const Transit = lazy(() => import('./transit'));
 const FoodCourt = lazy(() => import('./foodCourt'));
+const Service = lazy(() => import('./service'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
@@ -51,8 +52,9 @@ function App() {
       <OpeningPage />
       <Speech />
       <TableOfContent clickedSubject={clickedSubject} />
-      <Transit ref={buses} />
-      <FoodCourt ref={lunch} />
+      <Transit />
+      <FoodCourt />
+      <Service />
     </div>
   )
 }

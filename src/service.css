@@ -1,0 +1,45 @@
+.icon {
+    height: 4vh;
+    width: 9vw;
+}
+
+.titleService {
+    font-size: 3vh;
+    font-weight: 700;
+    margin-left: 1vw;
+}
+
+.titleName {
+    font-size: 4vh;
+    font-weight: 700;
+    margin-right: 1vw;
+}
+
+.titleContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    direction: rtl;
+}
+
+.textContainer>div {
+    flex-basis: 20ch;
+    flex-shrink: 0;
+}
+
+.educText, .tashText, .barberText, .michshuvText, .yohalamText, .mokedText {
+    width: 35vw;
+    margin-right: 5vw;
+    font-size: 1.7vh;
+    font-weight: 600;
+    direction: rtl;
+}
