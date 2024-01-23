@@ -9,7 +9,8 @@ import Gidron from './assets/gidron.svg'
 import Shiftzurim from './assets/shiftzurim.svg'
 import Freshop from './assets/freshop.svg'
 import DVCom from './assets/DVcom.svg'
-// import Center from './'
+import CenterPic from './assets/center.png'
+import Bank from './assets/bank.png'
 
 const Center = () => {
     return (
@@ -136,7 +137,7 @@ const Center = () => {
                     </div>
                 </div>
                 <div className='bankContainer'>
-                    <img src={DVCom} className='titleName' />
+                    <img src={Bank} className='titleName' />
                     <div className='bankText'>
                     קיימת עמדת מידע
                     והפקדת שיקים וכספומט
@@ -150,7 +151,7 @@ const Center = () => {
                     <p>ג- 09:00- 14:00</p>
                     </div>
                 </div>
-                {/* <img src={} */}
+                <img src={CenterPic} className='centerPic' />
             </div>
         </>
     )

@@ -27,3 +27,9 @@
 .bistopContainer, .shnitzelContainer, .burgerContainer, .coffeeContainer , .gidronContainer, .shiftzurimContainer, .freshContainer, .DVContainer, .bankContainer {
     margin-right: 2vw;
 }
+
+.centerPic {
+    height: 50vh;
+    position: relative;
+    left: 40vw;
+}

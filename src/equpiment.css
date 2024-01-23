@@ -1,0 +1,30 @@
+.equipIcon {
+    height: 4vh;
+    width: 10vw;
+    margin-right: 1vw;
+}
+
+.equipTitle {
+    font-size: 4vh;
+    font-weight: 700;
+    margin-left: 1vw;
+}
+
+.containers {
+    margin-right: 7vw;
+    font-size: 1.7vh;
+    font-weight: 600;
+    direction: rtl;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.afsankolContainer, .marlogContainer {
+    width: 50vw;
+}
+
+.merkazContainer, .windowContainer {
+    width: 30vw;
+}
