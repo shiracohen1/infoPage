@@ -11,10 +11,11 @@ const TableOfContent = lazy(() => import('./tableOfContent'));
 const Transit = lazy(() => import('./transit'));
 const FoodCourt = lazy(() => import('./foodCourt'));
 const Service = lazy(() => import('./service'));
+const Rabanut = lazy(() => import('./rabanut'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
-  const [currentSubject, setCurrentSubject] = useState("");
+  // const [currentSubject, setCurrentSubject] = useState("");
   const buses = useRef(null);
   const lunch = useRef(null);
   const service = useRef(null);
@@ -55,6 +56,7 @@ function App() {
       <Transit />
       <FoodCourt />
       <Service />
+      <Rabanut />
     </div>
   )
 }

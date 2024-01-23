@@ -3,6 +3,10 @@
     width: 9vw;
 }
 
+.serviceContainer {
+    margin-top: 5vh;
+}
+
 .titleService {
     font-size: 3vh;
     font-weight: 700;
@@ -13,6 +17,24 @@
     font-size: 4vh;
     font-weight: 700;
     margin-right: 1vw;
+    width: 25vw;
+    height: 6vh;
+}
+
+.titleName1 {
+    font-size: 4vh;
+    font-weight: 700;
+    margin-right: 1vw;
+    width: 41vw;
+    height: 8vh;
+}
+
+.titleName2 {
+    font-size: 4vh;
+    font-weight: 700;
+    margin-right: 1vw;
+    width: 38vw;
+    height: 7vh;
 }
 
 .titleContainer {
@@ -29,6 +51,29 @@
     flex-wrap: wrap;
     align-content: space-around;
     direction: rtl;
+    margin: 2vh 0vh;
+}
+
+.container2 {
+    margin-right: 9vw;
+}    
+
+.container1 {
+    margin-right: 2vw;
+}
+    
+
+.textContainer2 {
+    /* width: 60vw; */
+    margin-right: 12vw;
+}
+
+.hamalText {
+    width: 32vw;
+}
+
+.PPPText {
+    width: 70vw;
 }
 
 .textContainer>div {
@@ -36,10 +81,37 @@
     flex-shrink: 0;
 }
 
-.educText, .tashText, .barberText, .michshuvText, .yohalamText, .mokedText {
-    width: 35vw;
+.educText, .tashText, .barberText, .michshuvText, .yohalamText, .mokedText, .hamalText, .PPPText {
     margin-right: 5vw;
     font-size: 1.7vh;
     font-weight: 600;
     direction: rtl;
+}
+
+.container1 , .container2 {
+    width: 30vw;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.discContainer {
+    margin-top: 3vh;
+    display: flex;
+}
+
+.discText {
+    margin-right: 5vw;
+    font-size: 1.7vh;
+    font-weight: 600;
+    direction: rtl;
+    width: 60vw;
+}
+
+.basePic {
+    position: relative;
+    left: 11vw;
+    height: 40vh;
 }

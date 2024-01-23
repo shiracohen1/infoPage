@@ -1,0 +1,47 @@
+.bookIcon {
+    height: 5vh;
+    width: 8vw;
+}
+
+.rabanut {
+    margin-top: 4vh;
+}
+
+.rabTitleContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerrrrrr {
+    display: flex;
+    flex-direction: column;
+    margin-right: 5vw;
+    font-size: 1.7vh;
+    font-weight: 600;
+    width: 55vw;
+    margin-right: 30vw;
+    direction: rtl;
+    align-items: center;
+}
+
+.rabTitleName {
+    font-size: 4vh;
+    font-weight: 700;
+    margin-right: 1vw;
+    width: 20vw;
+    height: 6vh;
+}
+
+.RabanutPic {
+    position: relative;
+    left: 55vw;
+    bottom: 35vh;
+    height: 50vh;
+}
+
+.rabText {
+    margin-top: 2vh;
+    margin-right: 3vw;
+}

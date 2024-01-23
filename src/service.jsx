@@ -4,8 +4,12 @@ import mokedButton from './assets/2000Button.png'
 import YohalamButton from './assets/yohalamButton.png'
 import MokedMishuv from './assets/mokedMichshuv.svg'
 import Barber from './assets/barberButton.png'
-import Tash from './assets/tash.svg'
+import Tash from './assets/tash.png'
 import Education from './assets/education.svg'
+import Discpline from './assets/discipline.svg'
+import Base from './assets/base.svg'
+import Hamal from './assets/hamal.png'
+import PPPButton from './assets/PPPButton.png'
 
 const Service = () => {
     return (
@@ -51,7 +55,7 @@ const Service = () => {
                         </div>
                     </div>
                     <div>
-                        <img src={MokedMishuv} alt="michshuv" className='titleName' />
+                        <img src={MokedMishuv} alt="michshuv" className='titleName1' />
                         <div className='michshuvText'>
                             <p>
                             בניין המפקדה (206) קומה -1 (חלון קבלה
@@ -60,12 +64,13 @@ const Service = () => {
                             <p>
                             ניתן לפנות דרך הטלפון:
                             </p>
-                            <div>
+                            <p>
                                 <a href="tel: +073-3772000">073-3772000</a> שלוחה 2.
-                                <p>שעות פעילות: 8:30-12:00 13:00-18:00</p>
-                            </div>
+                                שעות פעילות: 8:30-12:00 13:00-18:00
+                            </p>
                         </div>
                     </div>
+                </div>
                 </div>
                 <div className='container2'>
                     <div>
@@ -102,9 +107,52 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
+                <div className='discContainer'>
+                    <div className='displine'>
+                        <img src={Discpline} alt="discpline" className='titleName' />
+                        <div className='discText'>
+                            <div>
+                                בקריית ההדרכה ינועו עם כומתה על הראש כלל המשרתים.
+                                חלה חובת הצדעה בשטח היחידה מדרגת אל”ם ומעלה.
+                                בשישי שבת וחג לא חלה החובה לחבישת כומתה.
+                            </div>
+                            <div>
+                                <p>עמדת חוגרים</p>
+                                <p>שעות פתיחה:</p>
+                                <p>יום א’ - ד ,08:30-12:00 13:00-17:00</p>
+                                <p>יום ה- 8:30 - 12:00</p>
+                                <p>טלפון מטכ”לי <a href="tel: +07472345">07472345</a>, טלפון אזרחי <a href="tel: +0733772345">0733772345</a></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <img src={Base} alt="base" className='basePic' />
+                </div>
+            </div>
+            <div className='textContainer2'>
+                <div>
+                    <img src={Hamal} alt="hamal" className='titleName2' />
+                    <div className='hamalText'>
+                        <p>
+                        גורם אחראי על משימת
+                        האבטחה ביחידה.
+                        </p>
+                        <p>
+                        חמ״ל מבצעי למקרי חירום,
+                        טלפון -  <a href="tel: + 073-3772330"> 073-3772330</a>
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src={PPPButton} alt="PPP" className='titleName' />
+                    <div className='PPPText'>
+                        קריית ההדרכה נשענת על קונספט ייחודי של שיתוף פעולה בין
+                        צה”ל לגורמי תפעול אזרחיים. מרקם מיוחד זה מאפשר הזדמנויות
+                        מגוונות להתפתחות ויצירה לקידום ההכשרות בצה”ל.
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
     )
 }
 
