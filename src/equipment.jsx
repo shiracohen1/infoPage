@@ -4,10 +4,11 @@ import Afsan from './assets/afsancol.svg'
 import Marlog from './assets/marlog.svg'
 import Window from './assets/tikshuvWindow.svg'
 import Merkaz from './assets/tikshuvCenter.svg'
+import GunsCenter from './assets/gunsCenter.svg'
 
 const Equipment = () => {
     return (
-        <>
+        <div className='equipContainer'>
             <div className='titleContainer'>
                 <img src={Tank} alt="tank" className='equipIcon' />
                 <div className='equipTitle'>ציוד צבאי</div>
@@ -123,7 +124,46 @@ const Equipment = () => {
                     </div>
                 </div>
             </div>
-        </>
+            <div className='gunsCenterContainer'>
+                <img src={GunsCenter} alt="guns" className='titleNameGuns' />
+                <div className='gunsText'>
+                    <div>
+                    מתן מענה בתחום הנשק והתחמושת.
+                    </div>
+                    <div>
+                        קורסים והכשרות מגיעים בתיאום מראש ע"י המפקדים,
+                        בהתאם לשעות הפעילות:
+                        <p>
+                        יום א': ,9:30-11:45 .13:00-16:30
+                        </p>
+                        <p>
+                        יום ב'- ד': ,8:00-11:45 .13:00:16:30 
+                        </p>
+                        <p>
+                        יום ה': ,8:00-11:45 .13:00-15:00
+                        </p>
+                        <p>
+                        יום ו': 8:00-9:00 (איפסונים בלבד ובתיאום מראש).
+                        </p>
+                        <div>
+                        אנשי סגל רשאים להגיע עצמאית בלא תיאום מראש בהתאם לשעות הפעילות:
+                        <p>
+                        יום א': ,9:30-11:45 .13:00-17:00
+                        </p>
+                        <p>
+                        יום ב'-ד': ,8:00-13:45 .13:00-17:00
+                        </p>
+                        <p>
+                        יום ה'- ,8:00-11:45 .13:00-15:00
+                        </p>
+                        <p>
+                        עבור כל פתיחה מעבר לשעות הפעילות נדרש לקבל אישור אל"ם.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     )
 }
 

@@ -12,8 +12,6 @@ body, html {
 }
 
 .body {
-  /* background-image: url("./assets/background1.png"); */
   width: 100vw;
-  background-repeat: no-repeat;
   background-size: cover;
 }
