@@ -13,8 +13,5 @@ body, html {
 
 .body {
   width: 100vw;
-  background-size: cover;
-  /* padding-top: 20vh; */
-  /* position: relative; */
-  /* bottom: 23vh; */
+  background-size: 100% 100%;
 }

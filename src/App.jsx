@@ -1,8 +1,9 @@
 import { useEffect, useState, lazy, useRef } from 'react'
-import Background1 from './assets/background1.svg' 
-import Background2 from './assets/background2.svg'
-import Background3 from './assets/background3.svg'
-import Background4 from './assets/background4.svg'
+import Background1 from './assets/background1.png' 
+import Background2 from './assets/background2.png'
+import Background3 from './assets/background3.png'
+import Background4 from './assets/background4.png'
+// import Background0 from './assets/background0.svg'
 import './App.css'
 
 const OpeningPage = lazy(() => import('./openingPage'));
@@ -55,7 +56,7 @@ function App() {
   
   return (
     <div style={{ backgroundImage: `url(${bgOption[currentBackground]})`}} className='body'>
-      <OpeningPage />
+      <OpeningPage currentBackground={currentBackground} />
       <Speech />
       <TableOfContent clickedSubject={clickedSubject} />
       <Transit />

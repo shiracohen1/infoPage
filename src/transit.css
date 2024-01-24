@@ -41,6 +41,7 @@ body, html {
 .shuttleTitle, .outsideTitle, .insideTitle {
     height: 6vh;
     width: 22vw;
+    margin-top: 1vh;
 }
 
 .shuttleText, .insideText, .outsideText {
