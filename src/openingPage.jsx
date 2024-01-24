@@ -3,7 +3,6 @@ import Title2 from './assets/title2.svg'
 import Title3 from './assets/title3.svg'
 import Title4 from './assets/title4.svg'
 import Logo from './assets/logo.png'
-// import Bahadim from './assets/base2.png'
 import './openingPage.css'
 import { useEffect, useState } from 'react'
 
