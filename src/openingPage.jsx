@@ -2,10 +2,10 @@ import Title1 from './assets/title1.svg'
 import Title2 from './assets/title2.svg'
 import Title3 from './assets/title3.svg'
 import Title4 from './assets/title4.svg'
+import Arrow from './assets/downArrowWhite.png'
 import Logo from './assets/logo.png'
 import './openingPage.css'
 import { useEffect, useState } from 'react'
-import { TypeAnimation } from 'react-type-animation';
 
 const OpeningPage = (props) => {
     const [currentTitle, setCurrentTitle] = useState("");
@@ -15,9 +15,6 @@ const OpeningPage = (props) => {
         "title3": Title3,
         "title4": Title4
     }
-    let i = 0;
-
-
 
     useEffect(() => {
         setCurrentTitle(`title${props.currentBackground.charAt(props.currentBackground.length - 1)}`);
@@ -28,6 +25,8 @@ const OpeningPage = (props) => {
             <img src={`${titleOption[currentTitle]}`} alt="title" className='title' />
             <img src={Logo} alt="logo" className='logo' />
             <div className='slogan'>"התשובה בעשייה"</div>
+            {/* <div className='arrow'>V</div> */}
+            <img src={Arrow} alt="arrow" className='arrow arrowAni' onClick={props.clickedArrow} />
         </div>
     )
 }

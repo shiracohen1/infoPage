@@ -20,6 +20,7 @@ const Health = lazy(() => import('./health'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
+  const speech = useRef(null)
   const sections = {
     buses: useRef(null),
     lunch: useRef(null),
@@ -30,15 +31,7 @@ function App() {
     rabanut: useRef(null),
     health: useRef(null)
   }
-
-  // const buses = useRef(null);
-  // const lunch = useRef(null);
-  // const service = useRef(null);
-  // const center = useRef(null);
-  // const fitness = useRef(null);
-  // const equip = useRef(null);
-  // const rabanut = useRef(null);
-  // const health = useRef(null);
+  // const newCache = await caches.open('new-cache');
 
   const bgOption = {
     "bg1": Background1,
@@ -54,11 +47,15 @@ function App() {
   function clickedSubject (event) {
     sections[event.currentTarget.alt].current.scrollIntoView({ behavior: 'smooth' });
   }
+
+  function clickedArrow () {
+    speech.current.scrollIntoView({behavior: 'smooth'});
+  }
   
   return (
     <div style={{ backgroundImage: `url(${bgOption[currentBackground]})`}} className='body'>
-      <OpeningPage currentBackground={currentBackground} />
-      <Speech />
+      <OpeningPage currentBackground={currentBackground} clickedArrow={clickedArrow} />
+      <Speech ref={speech} />
       <TableOfContent clickedSubject={clickedSubject} />
       <Transit ref={sections.buses} />
       <FoodCourt ref={sections.lunch} />

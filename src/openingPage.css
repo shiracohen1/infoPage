@@ -2,7 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 92vh;
+    height: 100vh;
+    position: relative;
 }
 
 
@@ -24,3 +25,26 @@
     font-size: 4.5vh;
     background-color: rgba(255, 255, 255, 0.45);
 }
+
+.arrow {
+    position: relative;
+    top: 37vh;
+    color: white;
+    width: 10vw;
+}
+
+.arrowAni {
+    animation: down 1.25s infinite;
+}
+
+@keyframes down {
+    0% {
+        transform: translate(0, 1vh);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 1vh);
+    }
+} 
