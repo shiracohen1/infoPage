@@ -20,10 +20,6 @@ const OpeningPage = (props) => {
         setCurrentTitle(`title${props.currentBackground.charAt(props.currentBackground.length - 1)}`);
     }, [props.currentBackground]);
 
-    useEffect(() => {
-        console.log(currentTitle);
-    }, [currentTitle]);
-
     return (
         <div className='openContainer'>
             <img src={`${titleOption[currentTitle]}`} alt="title" className='title' />

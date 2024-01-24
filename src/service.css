@@ -52,7 +52,7 @@
     flex-wrap: wrap;
     align-content: space-around;
     direction: rtl;
-    margin: 2vh 0vh;
+    /* margin: 2vh 0vh; */
 }
 
 .container2 {

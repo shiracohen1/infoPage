@@ -1,9 +1,8 @@
 import { useEffect, useState, lazy, useRef } from 'react'
-import Background1 from './assets/background1.png' 
-import Background2 from './assets/background2.png'
-import Background3 from './assets/background3.png'
-import Background4 from './assets/background4.png'
-// import Background0 from './assets/background0.svg'
+import Background1 from './assets/background1.jpeg' 
+import Background2 from './assets/background2.jpeg'
+import Background3 from './assets/background3.jpeg'
+import Background4 from './assets/background4.jpeg'
 import './App.css'
 
 const OpeningPage = lazy(() => import('./openingPage'));
@@ -41,11 +40,6 @@ function App() {
   useEffect(() => {
     setCurrentBackground(`bg${Math.floor(Math.random() * (4 - 1) + 1)}`);
   }, []);
-
-  useEffect(() => {
-    console.log(currentBackground);
-    console.log(bgOption[currentBackground]);
-  }, [currentBackground]);
 
   function clickedSubject (event) {
     // setCurrentSubject(event.currentTarget.alt);
