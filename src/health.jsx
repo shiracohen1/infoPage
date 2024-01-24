@@ -4,10 +4,12 @@ import HealthCenter from './assets/healthCenter.svg'
 import MedicineRoom from './assets/medicineRoom.svg'
 import Dentist from './assets/dentist.svg'
 import BaseMap from './assets/baseMap.svg'
+import { forwardRef } from 'react';
 
-const Health = () => {
+
+const Health = forwardRef((props, ref) => {
     return (
-        <div className='healthContainer'>
+        <div className='healthContainer' ref={ref}>
             <div className='titleContainer'>
                 <img src={HealthIcon} alt="health" className='healthIcon' />
                 <div className='titleNameHealth'>רפואה</div>
@@ -86,6 +88,6 @@ const Health = () => {
             <img src={BaseMap} alt="base" className='baseLastPic' />
         </div>
     )
-}
+})
 
 export default Health

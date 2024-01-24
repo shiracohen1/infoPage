@@ -21,6 +21,8 @@ const Health = lazy(() => import('./health'));
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
   // const [currentSubject, setCurrentSubject] = useState("");
+  // const subArr = ["buses", "lunch", "service", "center", "fitness", "equip", "rabanut", "health"];
+
   const buses = useRef(null);
   const lunch = useRef(null);
   const service = useRef(null);
@@ -42,25 +44,29 @@ function App() {
   }, []);
 
   function clickedSubject (event) {
-    // setCurrentSubject(event.currentTarget.alt);
-    // event.currentTarget.alt.current.scrollIntoView({ behavior: 'smooth' });
+    buses.current.scrollIntoView({ behavior: 'smooth' });
 
     console.log(event.currentTarget.alt);
-}
+  }
+
+  // useEffect(() => {
+  //   // if (currentSubject === ) {
+  //   // }
+  // }, [currentSubject])
   
   return (
     <div style={{ backgroundImage: `url(${bgOption[currentBackground]})`}} className='body'>
       <OpeningPage currentBackground={currentBackground} />
       <Speech />
       <TableOfContent clickedSubject={clickedSubject} />
-      <Transit />
-      <FoodCourt />
-      <Service />
-      <Rabanut />
-      <Center />
-      <Fittness />
-      <Equipment />
-      <Health />
+      <Transit ref={buses} />
+      <FoodCourt ref={lunch} />
+      <Service ref={service} />
+      <Rabanut ref={rabanut} />
+      <Center ref={center} />
+      <Fittness ref={fitness} />
+      <Equipment ref={equip} />
+      <Health ref={health} />
     </div>
   )
 }

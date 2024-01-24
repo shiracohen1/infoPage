@@ -5,10 +5,11 @@ import Kosher from './assets/kosher.svg'
 import Kashrut from './assets/kashrut.svg'
 import MiddleMeal from './assets/middleMeal.svg'
 import './foodCourt.css'
+import { forwardRef } from 'react';
 
-const FoodCourt = () => {
+const FoodCourt = forwardRef((props, ref) => {
     return (
-        <>
+        <div ref={ref}>
             <div className='titleContainer'>
                 <img src={FoodIcon} alt="icon" className='icon' />
                 <div className='titleFood'>חדר אוכל</div>
@@ -95,8 +96,8 @@ const FoodCourt = () => {
                         </div>
                 </div>
             </div>
-        </>
+        </div>
     )
-}
+})
 
 export default FoodCourt

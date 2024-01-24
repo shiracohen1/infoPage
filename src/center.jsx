@@ -11,10 +11,11 @@ import Freshop from './assets/freshop.svg'
 import DVCom from './assets/DVcom.svg'
 import CenterPic from './assets/center.png'
 import Bank from './assets/bank.png'
+import { forwardRef } from 'react';
 
-const Center = () => {
+const Center = forwardRef((props, ref) => {
     return (
-        <>
+        <div ref={ref}>
             <div className='titleContainer'>
                 <img src={MoneyIcon} alt="money" className='moneyIcon' />
                 <div className='titleCenter'>מרכז מסחרי</div>
@@ -153,8 +154,8 @@ const Center = () => {
                 </div>
                 <img src={CenterPic} className='centerPic' />
             </div>
-        </>
+        </div>
     )
-}
+})
 
 export default Center

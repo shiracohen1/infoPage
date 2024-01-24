@@ -5,10 +5,11 @@ import Marlog from './assets/marlog.svg'
 import Window from './assets/tikshuvWindow.svg'
 import Merkaz from './assets/tikshuvCenter.svg'
 import GunsCenter from './assets/gunsCenter.svg'
+import { forwardRef } from 'react';
 
-const Equipment = () => {
+const Equipment = forwardRef((props, ref) => {
     return (
-        <div className='equipContainer'>
+        <div className='equipContainer' ref={ref}>
             <div className='titleContainer'>
                 <img src={Tank} alt="tank" className='equipIcon' />
                 <div className='equipTitle'>ציוד צבאי</div>
@@ -164,6 +165,6 @@ const Equipment = () => {
             </div>
         </div>
     )
-}
+})
 
 export default Equipment

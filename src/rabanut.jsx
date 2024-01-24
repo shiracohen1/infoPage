@@ -1,10 +1,11 @@
 import './rabanut.css'
 import BookIcon from './assets/bookIcon.svg'
 import Kneset from './assets/kneset.svg'
+import { forwardRef } from 'react';
 
-const Rabanut = () => {
+const Rabanut = forwardRef((props, ref) => {
     return (
-        <div className='rabanut'>
+        <div className='rabanut' ref={ref}>
             <div className='containerrrrrr'>
                 <div className='rabTitleContainer'>
                     <img src={BookIcon} alt="bus" className='bookIcon' />
@@ -34,6 +35,6 @@ const Rabanut = () => {
             <img src={Kneset} alt="kneset" className='RabanutPic' />
         </div>
     )
-}
+})
 
 export default Rabanut

@@ -10,10 +10,11 @@ import Discpline from './assets/discipline.svg'
 import Base from './assets/base.svg'
 import Hamal from './assets/hamal.png'
 import PPPButton from './assets/PPPButton.png'
+import { forwardRef } from 'react';
 
-const Service = () => {
+const Service = forwardRef((props, ref) => {
     return (
-        <div className='serviceContainer'>
+        <div className='serviceContainer' ref={ref}>
             <div className='titleContainer'>
                 <img src={SettingsIcon} alt="settings" className='icon' />
                 <div className='titleService'>שירותים כלליים</div>
@@ -156,6 +157,6 @@ const Service = () => {
             </div>
         </div>
     )
-}
+})
 
 export default Service

@@ -4,10 +4,11 @@ import Gym from './assets/gym.svg'
 import PoolButton from './assets/poolButton.svg'
 import Library from './assets/libraryButton.png'
 import Pool from './assets/pool.svg'
+import { forwardRef } from 'react';
 
-const Fittness = () => {
+const Fittness = forwardRef((props, ref) => {
     return (
-        <div className='fitContainer'>
+        <div className='fitContainer' ref={ref}>
             <div className='titleContainer'>
                 <img src={Heart} alt="Heart" className='heartIcon' />
                 <div className='titleCenter'>פנאי וכושר</div>
@@ -106,6 +107,6 @@ const Fittness = () => {
             </div>
         </div>
     )
-}
+})
 
 export default Fittness

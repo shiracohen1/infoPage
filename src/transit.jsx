@@ -4,10 +4,11 @@ import OutsideBase from './assets/outsideBase.svg'
 import InsideButton from './assets/insideKiryaButton.png'
 import Shuttles from './assets/shuttles.svg'
 import './transit.css'
+import { forwardRef } from 'react';
 
-const Transit = () => {
+const Transit = forwardRef((props, ref) => {
     return (
-        <div className='shuttleContainer'>
+        <div className='shuttleContainer' ref={ref}>
             <div className='titleContainer'>
                 <img src={busIcon} alt="bus" className='icon' />
                 <div className='titleName'>היסעים</div>
@@ -41,6 +42,6 @@ const Transit = () => {
             <img src={Shuttles} alt="shuttle" className='shuttlePic' />
         </div>
     )
-}
+})
 
 export default Transit
