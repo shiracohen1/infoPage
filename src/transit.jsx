@@ -11,7 +11,7 @@ const Transit = forwardRef((props, ref) => {
         <div className='shuttleContainer' ref={ref}>
             <div className='titleContainer'>
                 <img src={busIcon} alt="bus" className='icon' />
-                <div className='titleName'>היסעים</div>
+                <div className='titleNameBus'>היסעים</div>
             </div>
             <div className='textContainer'>
                 <div className='shuttle'>

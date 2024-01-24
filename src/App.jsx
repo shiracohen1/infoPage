@@ -20,6 +20,7 @@ const Health = lazy(() => import('./health'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
   const speech = useRef(null)
   const sections = {
     buses: useRef(null),
@@ -44,6 +45,18 @@ function App() {
     setCurrentBackground(`bg${Math.floor(Math.random() * (4 - 1) + 1)}`);
   }, []);
 
+  // useEffect(() => {
+  //   const imgs = [
+  //     './assets/background4.jpeg',
+  //     './assets/background3.jpeg',
+  //     './assets/background2.jpeg',
+  //     './assets/background1.jpeg'
+  //   ];
+
+  //   cacheImgs(imgs);
+  // }, []);
+
+
   function clickedSubject (event) {
     sections[event.currentTarget.alt].current.scrollIntoView({ behavior: 'smooth' });
   }
@@ -51,6 +64,22 @@ function App() {
   function clickedArrow () {
     speech.current.scrollIntoView({behavior: 'smooth'});
   }
+
+  // const cacheImgs = async (srcArray) => {
+  //   const promises = await srcArray.map((src) => {
+  //     return new Promise(function (resolve, reject) {
+  //       const img = new Image();
+
+  //       img.src = src;
+  //       img.onload = resolve();
+  //       img.onerror = reject();
+  //     });
+  //   });
+
+  //   await Promise.all(promises);
+
+  //   setIsLoading(false);
+  // }
   
   return (
     <div style={{ backgroundImage: `url(${bgOption[currentBackground]})`}} className='body'>

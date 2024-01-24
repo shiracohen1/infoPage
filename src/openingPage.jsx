@@ -4,6 +4,7 @@ import Title3 from './assets/title3.svg'
 import Title4 from './assets/title4.svg'
 import Arrow from './assets/downArrowWhite.png'
 import Logo from './assets/logo.png'
+import Slogan from './assets/slogan.png'
 import './openingPage.css'
 import { useEffect, useState } from 'react'
 
@@ -24,8 +25,7 @@ const OpeningPage = (props) => {
         <div className='openContainer'>
             <img src={`${titleOption[currentTitle]}`} alt="title" className='title' />
             <img src={Logo} alt="logo" className='logo' />
-            <div className='slogan'>"התשובה בעשייה"</div>
-            {/* <div className='arrow'>V</div> */}
+            <img src={Slogan} alt="slogan" className='slogan' />
             <img src={Arrow} alt="arrow" className='arrow arrowAni' onClick={props.clickedArrow} />
         </div>
     )

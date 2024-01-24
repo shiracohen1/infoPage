@@ -21,9 +21,7 @@
 .slogan {
     color: white;
     margin-top: 3vh;
-    font-weight: 700;
-    font-size: 4.5vh;
-    background-color: rgba(255, 255, 255, 0.45);
+    width: 55vw;
 }
 
 .arrow {
