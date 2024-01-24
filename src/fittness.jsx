@@ -14,7 +14,7 @@ const Fittness = () => {
             </div>
             <div className='fitTextContainer'>
                 <div className='gymContainer'>
-                    <img src={Gym} className="titleName" />
+                    <img src={Gym} className="titleNameGym" />
                     <div className='gymText'>
                     מיקום -קריית הספורט, קומה 1
                     שעות פתיחה- 

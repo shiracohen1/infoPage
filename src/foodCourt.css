@@ -54,15 +54,17 @@
     direction: rtl;
 }
 
-.textContainer {
+.textContainerFood {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
     direction: rtl;
+    position: relative;
+    bottom: 14vh;
 }
 
-.textContainer>div {
+.textContainerFood>div {
     flex-basis: 20ch;
     flex-shrink: 0;
 }

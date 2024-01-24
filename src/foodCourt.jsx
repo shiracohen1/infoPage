@@ -24,7 +24,7 @@ const FoodCourt = () => {
                     א׳-ה׳ במהלך שעות ארוחת הצהריים
                     בלבד.
                 </div>
-                <div className='textContainer'>
+                <div className='textContainerFood'>
                     <div>
                         <img src={OpenHours} alt="openHours" className='titleName' />
                         <div className='openText'>
