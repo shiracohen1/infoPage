@@ -10,6 +10,7 @@ import Discpline from './assets/discipline.svg'
 import Base from './assets/base.svg'
 import Hamal from './assets/hamal.png'
 import PPPButton from './assets/PPPButton.png'
+import Back from './assets/backArrow.png'
 import { forwardRef } from 'react';
 
 const Service = forwardRef((props, ref) => {
@@ -19,6 +20,7 @@ const Service = forwardRef((props, ref) => {
                 <img src={SettingsIcon} alt="settings" className='icon' />
                 <div className='titleService'>שירותים כלליים</div>
             </div>
+            <img src={Back} alt="back" className='backArrow' onClick={props.goback} />
             <div className='textContainer'>
                 <div className='container1'>
                     <div>

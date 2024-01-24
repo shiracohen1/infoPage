@@ -6,6 +6,7 @@
 .rabanut {
     margin-top: 4vh;
     height: 50vh;
+    position: relative;
 }
 
 .rabTitleContainer {
@@ -50,4 +51,11 @@
 .kosher {
     height: 5vh;
     width: 8vw;
+}
+
+.backArrow {
+    width: 8vw;
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
 }

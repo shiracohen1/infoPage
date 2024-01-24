@@ -5,6 +5,7 @@ import Marlog from './assets/marlog.svg'
 import Window from './assets/tikshuvWindow.svg'
 import Merkaz from './assets/tikshuvCenter.svg'
 import GunsCenter from './assets/gunsCenter.svg'
+import Back from './assets/backArrow.png'
 import { forwardRef } from 'react';
 
 const Equipment = forwardRef((props, ref) => {
@@ -14,6 +15,7 @@ const Equipment = forwardRef((props, ref) => {
                 <img src={Tank} alt="tank" className='equipIcon' />
                 <div className='equipTitle'>ציוד צבאי</div>
             </div>
+            <img src={Back} alt="back" className='backArrow' onClick={props.goback} />
             <div className='containers'>
                 <div className='afsankolContainer'>
                     <img src={Afsan} alt="afsan" className='titleName' />

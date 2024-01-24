@@ -2,6 +2,7 @@ import './rabanut.css'
 import BookIcon from './assets/bookIcon.svg'
 import Kneset from './assets/kneset.svg'
 import { forwardRef } from 'react';
+import Back from './assets/backArrow.png'
 
 const Rabanut = forwardRef((props, ref) => {
     return (
@@ -11,6 +12,7 @@ const Rabanut = forwardRef((props, ref) => {
                     <img src={BookIcon} alt="bus" className='bookIcon' />
                     <div className='rabTitleName'>רבנות</div>
                 </div>
+                <img src={Back} alt="back" className='backArrow' onClick={props.goback} />
                 <div className='rabText'>
                     <p>שירותי הדת בקריית ההדרכה</p>
                     <p>

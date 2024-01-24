@@ -1,6 +1,7 @@
 .healthContainer {
     margin-top: 2vh;
     height: 135vh;
+    position: relative;
     overflow: hidden;
 }
 
@@ -32,9 +33,12 @@ p {
     margin: 0;
 }
 
-/* div {
-    margin-top: 1vh;
-} */
+.backArrow {
+    width: 8vw;
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
+}
 
 .baseLastPic {
     height: 55vh;

@@ -5,6 +5,7 @@ import MedicineRoom from './assets/medicineRoom.svg'
 import Dentist from './assets/dentist.svg'
 import BaseMap from './assets/baseMap.svg'
 import { forwardRef } from 'react';
+import Back from './assets/backArrow.png'
 
 
 const Health = forwardRef((props, ref) => {
@@ -14,6 +15,7 @@ const Health = forwardRef((props, ref) => {
                 <img src={HealthIcon} alt="health" className='healthIcon' />
                 <div className='titleNameHealth'>רפואה</div>
             </div>
+            <img src={Back} alt="back" className='backArrow' onClick={props.goback} />
             <div className='healthTextContainer'>
                 <div className='healthCenter'>
                     <img src={HealthCenter} alt="center" className='titleName' />

@@ -5,6 +5,7 @@ import PoolButton from './assets/poolButton.svg'
 import Library from './assets/libraryButton.png'
 import Pool from './assets/pool.svg'
 import { forwardRef } from 'react';
+import Back from './assets/backArrow.png'
 
 const Fittness = forwardRef((props, ref) => {
     return (
@@ -13,6 +14,7 @@ const Fittness = forwardRef((props, ref) => {
                 <img src={Heart} alt="Heart" className='heartIcon' />
                 <div className='titleCenter'>פנאי וכושר</div>
             </div>
+            <img src={Back} alt="back" className='backArrow' onClick={props.goback} />
             <div className='fitTextContainer'>
                 <div className='gymContainer'>
                     <img src={Gym} className="titleNameGym" />

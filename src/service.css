@@ -5,6 +5,7 @@
 
 .serviceContainer {
     margin-top: 5vh;
+    position: relative;
 }
 
 .titleService {
@@ -113,4 +114,11 @@ p {
     position: relative;
     left: 11vw;
     height: 40vh;
+}
+
+.backArrow {
+    width: 8vw;
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
 }

@@ -3,6 +3,10 @@
     width: 9vw;
 }
 
+.foodContainer {
+    position: relative;
+}
+
 .titleFood {
     font-size: 4vh;
     font-weight: 700;
@@ -77,4 +81,11 @@
 p {
     padding: 0;
     margin: 1vw;
+}
+
+.backArrow {
+    width: 8vw;
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
 }

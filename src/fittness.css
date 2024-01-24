@@ -6,6 +6,7 @@
 
 .fitContainer {
     margin-top: 4vh;
+    position: relative;
 }
 
 .fitTextContainer {
@@ -43,4 +44,11 @@
 .titleNameGym {
     height: 7.25vh;
     width: 30vw;
+}
+
+.backArrow {
+    width: 8vw;
+    position: absolute;
+    left: 2vw;
+    top: 2vh;
 }

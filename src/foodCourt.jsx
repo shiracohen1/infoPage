@@ -1,19 +1,21 @@
+import './foodCourt.css'
 import FoodIcon from './assets/foodIcon.svg'
 import LunchRoom from './assets/lunchRoom.svg'
 import OpenHours from './assets/openHours.svg'
 import Kosher from './assets/kosher.svg'
 import Kashrut from './assets/kashrut.svg'
 import MiddleMeal from './assets/middleMeal.svg'
-import './foodCourt.css'
+import Back from './assets/backArrow.png'
 import { forwardRef } from 'react';
 
 const FoodCourt = forwardRef((props, ref) => {
     return (
-        <div ref={ref}>
+        <div className="foodContainer" ref={ref}>
             <div className='titleContainer'>
                 <img src={FoodIcon} alt="icon" className='icon' />
                 <div className='titleFood'>חדר אוכל</div>
             </div>
+            <img src={Back} alt="back" className='backArrow' onClick={props.goback} />
             <div className='genericContainer'>
                 <img src={LunchRoom} alt="room" className='lunchPic' />
                 <div className='genericText'>

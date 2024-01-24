@@ -20,7 +20,7 @@ const Health = lazy(() => import('./health'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
-  const [isLoading, setIsLoading] = useState(true);
+  const table = useRef(null);
   const speech = useRef(null)
   const sections = {
     buses: useRef(null),
@@ -65,6 +65,10 @@ function App() {
     speech.current.scrollIntoView({behavior: 'smooth'});
   }
 
+  function goback () {
+    table.current.scrollIntoView({behavior: 'smooth'});
+  }
+
   // const cacheImgs = async (srcArray) => {
   //   const promises = await srcArray.map((src) => {
   //     return new Promise(function (resolve, reject) {
@@ -85,15 +89,15 @@ function App() {
     <div style={{ backgroundImage: `url(${bgOption[currentBackground]})`}} className='body'>
       <OpeningPage currentBackground={currentBackground} clickedArrow={clickedArrow} />
       <Speech ref={speech} />
-      <TableOfContent clickedSubject={clickedSubject} />
+      <TableOfContent ref={table} clickedSubject={clickedSubject}  />
       <Transit ref={sections.buses} />
-      <FoodCourt ref={sections.lunch} />
-      <Service ref={sections.service} />
-      <Rabanut ref={sections.rabanut} />
-      <Center ref={sections.center} />
-      <Fittness ref={sections.fitness} />
-      <Equipment ref={sections.equip} />
-      <Health ref={sections.health} />
+      <FoodCourt ref={sections.lunch} goback={goback} />
+      <Service ref={sections.service} goback={goback} />
+      <Rabanut ref={sections.rabanut} goback={goback} />
+      <Center ref={sections.center} goback={goback} />
+      <Fittness ref={sections.fitness} goback={goback} />
+      <Equipment ref={sections.equip} goback={goback} />
+      <Health ref={sections.health} goback={goback} />
     </div>
   )
 }

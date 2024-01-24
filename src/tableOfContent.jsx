@@ -7,10 +7,11 @@ import FitnessButton from './assets/fitnessButton.svg'
 import EquipButton from './assets/equipButton.svg'
 import RabanutButton from './assets/rabanutButton.svg'
 import healthButton from './assets/healthButton.svg'
+import { forwardRef } from 'react';
 
-const TableOfContent = (props) => {
+const TableOfContent = forwardRef((props, ref) => {
     return (
-        <div className='tableContainer'>
+        <div className='tableContainer' ref={ref}>
             <div className='titleTable'>תוכן עניינים</div>
             <div className='buttonContainer'>
                 <img src={BusesButton} alt="buses" className='buttons' onClick={props.clickedSubject} />
@@ -24,6 +25,6 @@ const TableOfContent = (props) => {
             </div>
         </div>
     )
-}
+})
 
 export default TableOfContent

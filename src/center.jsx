@@ -11,15 +11,17 @@ import Freshop from './assets/freshop.svg'
 import DVCom from './assets/DVcom.svg'
 import CenterPic from './assets/center.png'
 import Bank from './assets/bank.png'
+import Back from './assets/backArrow.png'
 import { forwardRef } from 'react';
 
 const Center = forwardRef((props, ref) => {
     return (
-        <div ref={ref}>
+        <div className='center' ref={ref}>
             <div className='titleContainer'>
                 <img src={MoneyIcon} alt="money" className='moneyIcon' />
                 <div className='titleCenter'>מרכז מסחרי</div>
             </div>
+            <img src={Back} alt="back" className='backArrow' onClick={props.goback} />
             <div className='cenTextContainer'>
                 <div className='bistopContainer'>
                     <img src={Bistop} alt="bistop" className='titleName' />
