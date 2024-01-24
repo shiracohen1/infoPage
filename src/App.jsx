@@ -20,17 +20,25 @@ const Health = lazy(() => import('./health'));
 
 function App() {
   const [currentBackground, setCurrentBackground] = useState("");
-  // const [currentSubject, setCurrentSubject] = useState("");
-  // const subArr = ["buses", "lunch", "service", "center", "fitness", "equip", "rabanut", "health"];
+  const sections = {
+    buses: useRef(null),
+    lunch: useRef(null),
+    service: useRef(null),
+    center:  useRef(null),
+    fitness:  useRef(null),
+    equip:  useRef(null),
+    rabanut: useRef(null),
+    health: useRef(null)
+  }
 
-  const buses = useRef(null);
-  const lunch = useRef(null);
-  const service = useRef(null);
-  const center = useRef(null);
-  const fitness = useRef(null);
-  const equip = useRef(null);
-  const rabanut = useRef(null);
-  const health = useRef(null);
+  // const buses = useRef(null);
+  // const lunch = useRef(null);
+  // const service = useRef(null);
+  // const center = useRef(null);
+  // const fitness = useRef(null);
+  // const equip = useRef(null);
+  // const rabanut = useRef(null);
+  // const health = useRef(null);
 
   const bgOption = {
     "bg1": Background1,
@@ -44,29 +52,22 @@ function App() {
   }, []);
 
   function clickedSubject (event) {
-    buses.current.scrollIntoView({ behavior: 'smooth' });
-
-    console.log(event.currentTarget.alt);
+    sections[event.currentTarget.alt].current.scrollIntoView({ behavior: 'smooth' });
   }
-
-  // useEffect(() => {
-  //   // if (currentSubject === ) {
-  //   // }
-  // }, [currentSubject])
   
   return (
     <div style={{ backgroundImage: `url(${bgOption[currentBackground]})`}} className='body'>
       <OpeningPage currentBackground={currentBackground} />
       <Speech />
       <TableOfContent clickedSubject={clickedSubject} />
-      <Transit ref={buses} />
-      <FoodCourt ref={lunch} />
-      <Service ref={service} />
-      <Rabanut ref={rabanut} />
-      <Center ref={center} />
-      <Fittness ref={fitness} />
-      <Equipment ref={equip} />
-      <Health ref={health} />
+      <Transit ref={sections.buses} />
+      <FoodCourt ref={sections.lunch} />
+      <Service ref={sections.service} />
+      <Rabanut ref={sections.rabanut} />
+      <Center ref={sections.center} />
+      <Fittness ref={sections.fitness} />
+      <Equipment ref={sections.equip} />
+      <Health ref={sections.health} />
     </div>
   )
 }

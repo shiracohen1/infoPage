@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './tableOfContent.css'
 import BusesButton from './assets/busesButton.svg'
 import LunchButton from './assets/lunchButton.svg'
