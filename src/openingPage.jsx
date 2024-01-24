@@ -5,6 +5,7 @@ import Title4 from './assets/title4.svg'
 import Logo from './assets/logo.png'
 import './openingPage.css'
 import { useEffect, useState } from 'react'
+import { TypeAnimation } from 'react-type-animation';
 
 const OpeningPage = (props) => {
     const [currentTitle, setCurrentTitle] = useState("");
@@ -13,7 +14,10 @@ const OpeningPage = (props) => {
         "title2": Title2,
         "title3": Title3,
         "title4": Title4
-      }
+    }
+    let i = 0;
+
+
 
     useEffect(() => {
         setCurrentTitle(`title${props.currentBackground.charAt(props.currentBackground.length - 1)}`);
